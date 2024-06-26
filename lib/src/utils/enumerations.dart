@@ -2,6 +2,8 @@ enum CardType {
   otherBrand,
   mastercard,
   visa,
+  uzcard,
+  humo,
   rupay,
   americanExpress,
   unionpay,
