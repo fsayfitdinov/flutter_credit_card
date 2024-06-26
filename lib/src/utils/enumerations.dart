@@ -4,12 +4,8 @@ enum CardType {
   visa,
   uzcard,
   humo,
-  rupay,
   americanExpress,
   unionpay,
-  discover,
-  elo,
-  hipercard,
 }
 
 /// The type of floating event.

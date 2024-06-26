@@ -54,8 +54,7 @@ class AppConstants {
 
   /// Gyroscope channel constants
   static const String gyroMethodChannelName = 'com.simform.flutter_credit_card';
-  static const String gyroEventChannelName =
-      'com.simform.flutter_credit_card/gyroscope';
+  static const String gyroEventChannelName = 'com.simform.flutter_credit_card/gyroscope';
   static const String isGyroAvailableMethod = 'isGyroscopeAvailable';
   static const String initiateMethod = 'initiateEvents';
   static const String cancelMethod = 'cancelEvents';
@@ -74,45 +73,15 @@ class AppConstants {
   ///
   /// Make sure to keep the keys sorted in descending order starting from the
   /// first digit of the start range.
-  static const Map<int, Map<List<int?>, CardType>> cardNumPatterns =
-      <int, Map<List<int?>, CardType>>{
+  static const Map<int, Map<List<int?>, CardType>> cardNumPatterns = <int, Map<List<int?>, CardType>>{
     6: <List<int?>, CardType>{
-      <int?>[655021, 655058]: CardType.elo,
-      <int?>[655000, 655019]: CardType.elo,
-      <int?>[6521, 6522]: CardType.rupay,
-      <int?>[651652, 651679]: CardType.elo,
-      <int?>[650901, 650978]: CardType.elo,
-      <int?>[650720, 650727]: CardType.elo,
-      <int?>[650700, 650718]: CardType.elo,
-      <int?>[650541, 650598]: CardType.elo,
-      <int?>[650485, 650538]: CardType.elo,
-      <int?>[650405, 650439]: CardType.elo,
-      <int?>[650035, 650051]: CardType.elo,
-      <int?>[650031, 650033]: CardType.elo,
-      <int?>[65, null]: CardType.discover,
-      <int?>[644, 649]: CardType.discover,
-      <int?>[636368, null]: CardType.elo,
-      <int?>[636297, null]: CardType.elo,
-      <int?>[627780, null]: CardType.elo,
-      <int?>[622126, 622925]: CardType.discover,
       <int?>[62, null]: CardType.unionpay,
-      <int?>[606282, null]: CardType.hipercard,
-      <int?>[6011, null]: CardType.discover,
-      <int?>[60, null]: CardType.rupay,
     },
     5: <List<int?>, CardType>{
       <int?>[51, 55]: CardType.mastercard,
-      <int?>[509000, 509999]: CardType.elo,
-      <int?>[506699, 506778]: CardType.elo,
-      <int?>[504175, null]: CardType.elo,
+      <int?>[5614, null]: CardType.uzcard,
     },
     4: <List<int?>, CardType>{
-      <int?>[457631, 457632]: CardType.elo,
-      <int?>[457393, null]: CardType.elo,
-      <int?>[451416, null]: CardType.elo,
-      <int?>[438935, null]: CardType.elo,
-      <int?>[431274, null]: CardType.elo,
-      <int?>[401178, 401179]: CardType.elo,
       <int?>[4, null]: CardType.visa,
     },
     3: <List<int?>, CardType>{
@@ -125,16 +94,20 @@ class AppConstants {
       <int?>[223, 229]: CardType.mastercard,
       <int?>[2221, 2229]: CardType.mastercard,
     },
+    9: <List<int?>, CardType>{
+      <int?>[9860, null]: CardType.humo,
+    },
+    8: <List<int?>, CardType>{
+      <int?>[8600, null]: CardType.uzcard,
+    },
   };
 
   static const Map<CardType, String> cardTypeIconAsset = <CardType, String>{
     CardType.visa: AssetPaths.visa,
-    CardType.rupay: AssetPaths.rupay,
     CardType.americanExpress: AssetPaths.americanExpress,
     CardType.mastercard: AssetPaths.mastercard,
     CardType.unionpay: AssetPaths.unionpay,
-    CardType.discover: AssetPaths.discover,
-    CardType.elo: AssetPaths.elo,
-    CardType.hipercard: AssetPaths.hipercard,
+    CardType.uzcard: AssetPaths.uzcard,
+    CardType.humo: AssetPaths.humo,
   };
 }
